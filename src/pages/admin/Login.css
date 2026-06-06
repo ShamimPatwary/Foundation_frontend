@@ -1,0 +1,14 @@
+.login-page{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+.login-left{background:linear-gradient(135deg,var(--navy),#2a1a5e);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;position:relative;overflow:hidden;text-align:center}
+.ll-logo{width:120px;height:120px;object-fit:contain;margin-bottom:24px;position:relative;z-index:1;animation:float 6s ease-in-out infinite}
+.login-left h1{color:#fff;font-size:1.8rem;font-weight:800;margin-bottom:8px;position:relative;z-index:1}
+.login-left p{color:rgba(255,255,255,.65);font-size:1rem;position:relative;z-index:1}
+.ls1,.ls2,.ls3{position:absolute;border-radius:50%;filter:blur(60px);opacity:.2}
+.ls1{width:300px;height:300px;background:var(--magenta);top:-80px;right:-80px}
+.ls2{width:250px;height:250px;background:var(--teal);bottom:-60px;left:-60px}
+.ls3{width:180px;height:180px;background:var(--yellow);top:50%;left:30%}
+.login-right{display:flex;align-items:center;justify-content:center;background:var(--off);padding:48px}
+.login-box{background:#fff;border-radius:var(--rl);padding:48px;width:100%;max-width:420px;box-shadow:var(--shadow-lg)}
+.login-box h2{font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:6px}
+.login-box>p{color:var(--gray);margin-bottom:32px;font-size:.95rem}
+@media(max-width:768px){.login-page{grid-template-columns:1fr}.login-left{min-height:200px;padding:32px}.ll-logo{width:80px;height:80px}}

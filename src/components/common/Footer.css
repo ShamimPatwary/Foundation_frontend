@@ -1,0 +1,26 @@
+.footer{background:var(--navy);color:#fff;margin-top:80px}
+.footer-main{padding:64px 0 48px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px}
+.f-brand img.f-logo{width:64px;height:64px;object-fit:contain;margin-bottom:12px}
+.f-brand h3{font-size:1.1rem;font-weight:700;margin-bottom:12px;color:#fff}
+.f-brand p{font-size:.88rem;color: rgba(255,255,255,.65);line-height:1.7}
+.f-social{display:flex;gap:10px;margin-top:20px}
+.f-social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff;transition:var(--t)}
+.f-social a:hover{background:var(--magenta)}
+.f-col h4{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.5);margin-bottom:16px}
+.f-col ul{list-style:none}
+.f-col ul li{margin-bottom:10px;font-size:.88rem;color:rgba(255,255,255,.7)}
+.f-col ul li a{color:rgba(255,255,255,.7);transition:var(--t)}
+.f-col ul li a:hover{color:#fff;padding-left:4px}
+.f-newsletter p{font-size:.88rem;color:rgba(255,255,255,.65);margin-bottom:16px}
+.f-sub-form{display:flex;flex-direction:column;gap:10px}
+.f-sub-form input{padding:11px 14px;border-radius:10px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;font-size:.88rem}
+.f-sub-form input::placeholder{color:rgba(255,255,255,.4)}
+.f-sub-form input:focus{border-color:var(--magenta);outline:none}
+.f-sub-form button{padding:11px;border-radius:10px;background:var(--magenta);color:#fff;border:none;font-weight:700;font-size:.9rem;transition:var(--t)}
+.f-sub-form button:hover{background:#a01560}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0}
+.f-bottom-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.f-bottom-inner p{font-size:.82rem;color:rgba(255,255,255,.45)}
+@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:560px){.footer-grid{grid-template-columns:1fr}.f-bottom-inner{flex-direction:column;text-align:center}}

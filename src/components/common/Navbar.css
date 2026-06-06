@@ -1,0 +1,64 @@
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:16px 0;transition:all .4s ease}
+.nav.scrolled{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);box-shadow:0 2px 24px rgba(26,31,94,.1);padding:10px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.nav-logo{width:48px;height:48px;object-fit:contain;transition:transform .3s}
+.nav-brand:hover .nav-logo{transform:rotate(-6deg) scale(1.06)}
+.nav-name{font-size:1rem;font-weight:700;color:var(--navy);line-height:1.2}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none;flex-wrap:wrap}
+.nav-links li a{padding:7px 12px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--navy);transition:var(--t)}
+.nav-links li a:hover,.nav-links li a.active{color:var(--magenta);background:rgba(192,24,110,.07)}
+.nav-donate{background:var(--magenta) !important;color:#fff !important;border-radius:22px !important;font-weight:700 !important;padding:8px 18px !important}
+.nav-donate:hover{background:var(--navy) !important;box-shadow:0 6px 20px rgba(192,24,110,.35)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:var(--t)}
+@media(max-width:960px){
+  .nav-toggle{display:flex}
+  .nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px;gap:2px;box-shadow:0 8px 32px rgba(0,0,0,.12)}
+  .nav-links.open{display:flex}
+  .nav-links li a{display:block;padding:11px 14px;border-radius:10px}
+}
+
+
+
+/* Initial state */
+.nav-name{
+  font-size:1rem;
+  font-weight:700;
+  color:#fff;
+  line-height:1.2;
+}
+
+.nav-links li a{
+  padding:7px 12px;
+  border-radius:8px;
+  font-size:.85rem;
+  font-weight:500;
+  color:#fff;
+  transition:var(--t);
+}
+
+/* After scroll */
+.nav.scrolled .nav-name{
+  color:var(--navy);
+}
+
+.nav.scrolled .nav-links li a{
+  color:var(--navy);
+}
+
+/* Active & hover states */
+.nav-links li a:hover,
+.nav-links li a.active{
+  color:var(--magenta);
+  background:rgba(192,24,110,.07);
+}
+
+
+.nav-toggle span{
+  background:#fff;
+}
+
+.nav.scrolled .nav-toggle span{
+  background:var(--navy);
+}
